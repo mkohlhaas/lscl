@@ -1,6 +1,4 @@
 #include "error.h"
-#include <CL/cl.h>
-#include <CL/cl_platform.h>
 
 cl_platform_id *platforms(cl_uint *numPlatforms) {
   cl_int err = clGetPlatformIDs(0, NULL, numPlatforms);

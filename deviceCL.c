@@ -1,9 +1,5 @@
 #include "deviceCL.h"
 #include "error.h"
-#include <CL/cl.h>
-#include <CL/cl_platform.h>
-#include <glib.h>
-#include <stdio.h>
 
 // TODO: write macro ?
 static char *deviceStr(cl_device_id device, cl_device_info paramName, char *errorMsg) {

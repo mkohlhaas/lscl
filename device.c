@@ -1,8 +1,6 @@
 #include "deviceCL.h"
-#include "glib.h"
 #include "json_object.h"
 #include "platformCL.h"
-#include <CL/cl.h>
 
 void getProperties(GArray *queueProperties, char *name, json_object *Device) {
   json_object *QueueProperties = json_object_new_array();

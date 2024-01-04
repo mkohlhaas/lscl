@@ -2,7 +2,6 @@
 #include "deviceCL.h"
 #include "json_object.h"
 #include "version.h"
-#include <CL/cl.h>
 #include <stdio.h>
 
 json_object *AddDevices(json_object *Platform) {
@@ -437,9 +436,7 @@ void AddDevice_PartitionProperties(json_object *Device, cl_device_id device) {
   getProperties(devicePartitionProperties(device), "partition_properties", Device);
 }
 
-void AddDevice_PartitionType(json_object *Device, cl_device_id device) {
-  getProperties(devicePartitionType(device), "partition_types", Device);
-}
+void AddDevice_PartitionType(json_object *Device, cl_device_id device) { getProperties(devicePartitionType(device), "partition_types", Device); }
 
 void AddDevice_PipeMaxActiveReservations(json_object *Device, cl_device_id device) {
   cl_uint pipeMaxActiveReservations = devicePipeMaxActiveReservations(device);

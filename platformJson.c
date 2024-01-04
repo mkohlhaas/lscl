@@ -1,8 +1,6 @@
 #include "json_object.h"
 #include "platformCL.h"
 #include "version.h"
-#include <CL/cl.h>
-#include <json_types.h>
 #include <stdio.h>
 
 json_object *CreateRoot() { return json_object_new_object(); }
