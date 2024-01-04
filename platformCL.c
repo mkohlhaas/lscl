@@ -2,8 +2,6 @@
 #include <CL/cl.h>
 #include <CL/cl_platform.h>
 
-// Platform
-
 cl_platform_id *platforms(cl_uint *numPlatforms) {
   cl_int err = clGetPlatformIDs(0, NULL, numPlatforms);
   handleError(err, "Error getting platforms.");
