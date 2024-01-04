@@ -17,5 +17,4 @@ link_libraries(${GLIB2_LIBRARIES})
 # json-c
 find_package(json-c CONFIG)
 
-add_executable(${PROJECT_NAME} lscl.c device.c deviceCL.c error.c deviceJson.c platformJson.c platform.c platformCL.c version.c)
-target_link_libraries(${PROJECT_NAME} PRIVATE json-c::json-c)
+add_subdirectory(src)
