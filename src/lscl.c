@@ -45,8 +45,11 @@ int main(void) {
       AddDevice_AddressBits(Device, device);
       AddDevice_Available(Device, device);
       AddDevice_BuiltInKernels(Device, device);
+      AddDevice_CompilerAvailable(Device, device);
+      AddDevice_DoubleFPConfig(Device, device);
       AddDevice_EndianLittle(Device, device);
       AddDevice_EnqueueCapabilities(Device, device);
+      AddDevice_ErrorCorrectionSupport(Device, device);
       AddDevice_ExecCapabilities(Device, device);
       AddDevice_Extensions(Device, device);
       AddDevice_GenericAddressSpaceSupport(Device, device);
@@ -74,6 +77,7 @@ int main(void) {
       AddDevice_MaxConstantArgs(Device, device);
       AddDevice_MaxClockFrequency(Device, device);
       AddDevice_MaxConstantBufferSize(Device, device);
+      AddDevice_MaxConstantBufferSize(Device, device);
       AddDevice_MaxGlobalVariableSize(Device, device);
       AddDevice_MaxMemAllocSize(Device, device);
       AddDevice_MaxNumSubGroups(Device, device);
@@ -85,6 +89,7 @@ int main(void) {
       AddDevice_MaxReadWriteImageArgs(Device, device);
       AddDevice_MaxSamplers(Device, device);
       AddDevice_MaxWorkGroupSize(Device, device);
+      AddDevice_MaxWorkItemDimensions(Device, device);
       AddDevice_MaxComputeUnits(Device, device);
       AddDevice_MaxWriteImageArgs(Device, device);
       AddDevice_MemBaseAddrAlign(Device, device);
@@ -115,6 +120,7 @@ int main(void) {
       AddDevice_PreferredVectorWidthDouble(Device, device);
       AddDevice_PreferredVectorWidthFloat(Device, device);
       AddDevice_PreferredVectorWidthHalf(Device, device);
+      AddDevice_PreferredVectorWidthChar(Device, device);
       AddDevice_PreferredVectorWidthInt(Device, device);
       AddDevice_PreferredVectorWidthLong(Device, device);
       AddDevice_PreferredVectorWidthShort(Device, device);
