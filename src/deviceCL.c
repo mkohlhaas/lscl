@@ -60,6 +60,7 @@ static cl_ulong deviceUlong(cl_device_id device, cl_device_info paramName, char 
   return retValue;
 }
 
+// TODO: json function
 size_t *deviceMaxWorkItemSizes(cl_device_id device, size_t *numDims) {
   size_t paramSize;
   cl_int err = clGetDeviceInfo(device, CL_DEVICE_MAX_WORK_ITEM_SIZES, 0, NULL, &paramSize);

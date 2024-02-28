@@ -104,6 +104,7 @@ void         AddDevice_QueueOnDeviceProperties             (json_object *Device,
 void         AddDevice_QueueOnHostProperties               (json_object *Device, cl_device_id device);
 void         AddDevice_QueueOnDevicePreferredSize          (json_object *Device, cl_device_id device);
 void         AddDevice_ReferenceCount                      (json_object *Device, cl_device_id device);
+// TODO: void         AddDevice_SingleFPConfig                      (json_object *Device, cl_device_id device);
 void         AddDevice_SubGroupIndependentForwardProgress  (json_object *Device, cl_device_id device);
 void         AddDevice_SVMCapabilities                     (json_object *Device, cl_device_id device);
 void         AddDevice_VendorID                            (json_object *Device, cl_device_id device);
